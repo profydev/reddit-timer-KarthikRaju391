@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.header`
   max-width: 1300px;
@@ -18,6 +19,10 @@ export const Nav = styled.nav`
   }
 `;
 
+const ListItem = styled.li`
+  text-decoration: none;
+`;
+
 const NavLinks = styled.ul`
   list-style-type: none;
   font-family: 'Montserrat', sans-serif;
@@ -25,7 +30,7 @@ const NavLinks = styled.ul`
   gap: 1.6em;
 `;
 
-const Links = styled.a`
+const StyledLink = styled(Link)`
   text-decoration: none;
   color: black;
 `;
@@ -33,11 +38,11 @@ const Links = styled.a`
 const Header = () => (
   <Container>
     <Nav>
-      <a href="/"><img src="/logo.svg" alt="logo" /></a>
+      <Link to="/"><img src="/logo.svg" alt="logo" /></Link>
       <NavLinks>
-        <li><Links href="/searchpage">Search</Links></li>
-        <li><Links href="#how-it-works">How it works</Links></li>
-        <li><Links href="#about">About</Links></li>
+        <ListItem><StyledLink to="/searchpage">Search</StyledLink></ListItem>
+        <ListItem><StyledLink to="#how-it-works">How it works</StyledLink></ListItem>
+        <ListItem><StyledLink to="#about">About</StyledLink></ListItem>
       </NavLinks>
     </Nav>
   </Container>
