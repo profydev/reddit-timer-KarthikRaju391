@@ -12,15 +12,12 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
   }
-<<<<<<< HEAD
 
   *,
   *::before,
   *::after{
     box-sizing: border-box;
   }
-=======
->>>>>>> main
 `;
 
 const Root = () => (
