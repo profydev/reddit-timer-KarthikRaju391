@@ -41,15 +41,15 @@ const Subreddit = styled(Subhead)`
   margin-top: 3em;
 `;
 
-const ImageContainer = styled.div`
-  width: 100%; 
+const ImageContainer = styled(Link)`
+  /* width: 100%;  */
   display: flex;
   justify-content: center;
 `;
 
 const Heatmap = styled.img`
-  /* height:332px; */
-  padding: 20px 60px;
+  width: 80%;
+  padding: 12px 82px;
 `;
 
 const Home = () => (
@@ -64,7 +64,7 @@ const Home = () => (
     <div>
       <Subreddit>r/javascript</Subreddit>
     </div>
-    <ImageContainer>
+    <ImageContainer to="/searchpage">
       <Heatmap src="/table.png" alt="heatmap" />
     </ImageContainer>
   </div>
