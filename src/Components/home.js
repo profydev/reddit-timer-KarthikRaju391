@@ -106,7 +106,7 @@ const Home = () => (
         • See immediately when to submit your reddit post.
       </InfoContent>
     </InfoSection>
-    <InfoSection2>
+    <InfoSection2 id="about">
       <InfoHead>About</InfoHead>
       <InfoContent>
         This app was created during a course on
