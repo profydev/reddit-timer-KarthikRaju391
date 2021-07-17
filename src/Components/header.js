@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 export const Container = styled.header`
   max-width: 1440px;
@@ -40,9 +40,9 @@ const Header = () => (
     <Nav>
       <Link to="/"><img src="/logo.svg" alt="logo" /></Link>
       <NavLinks>
-        <ListItem><StyledLink to="/searchpage">Search</StyledLink></ListItem>
-        <ListItem><StyledLink to="#how-it-works">How it works</StyledLink></ListItem>
-        <ListItem><StyledLink to="#about">About</StyledLink></ListItem>
+        <ListItem><StyledLink to="searchpage">Search</StyledLink></ListItem>
+        <ListItem><StyledLink smooth to="#how-it-works">How it works</StyledLink></ListItem>
+        <ListItem><StyledLink smooth to="#about">About</StyledLink></ListItem>
       </NavLinks>
     </Nav>
   </Container>

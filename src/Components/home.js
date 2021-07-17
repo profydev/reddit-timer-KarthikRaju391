@@ -21,7 +21,6 @@ const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  
 `;
 
 const Button = styled(Link)`
@@ -37,6 +36,10 @@ const Button = styled(Link)`
   font-weight: bold;
 `;
 
+const SubredditLink = styled(Link)`
+  text-decoration: none;
+`;
+
 const Subreddit = styled(Subhead)`
   margin-top: 3em;
 `;
@@ -48,7 +51,7 @@ const ImageContainer = styled(Link)`
 `;
 
 const Heatmap = styled.img`
-  width: 80%;
+  max-width: 100%;
   padding: 12px 82px;
 `;
 
@@ -76,7 +79,7 @@ const InfoSection2 = styled(InfoSection)`
 
 const SubLinks = styled.a`
   text-decoration: none;
-  color: lightskyblue;
+  color: #18a0fb;
 `;
 
 const Home = () => (
@@ -89,7 +92,9 @@ const Home = () => (
     </div>
     <ButtonContainer><Button to="/searchpage">Show me the best time</Button></ButtonContainer>
     <div>
-      <Subreddit>r/javascript</Subreddit>
+      <SubredditLink to="/search">
+        <Subreddit>r/javascript</Subreddit>
+      </SubredditLink>
     </div>
     <ImageContainer to="/searchpage">
       <Heatmap src="/table.png" alt="heatmap" />
