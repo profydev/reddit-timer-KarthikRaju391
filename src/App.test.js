@@ -1,14 +1,14 @@
 import React from 'react';
-import { render,screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import userEvent from '@testing-library/user-event';
+import App from './App';
 
 function setup() {
   return render(
     <MemoryRouter>
       <App />
-    </MemoryRouter>
+    </MemoryRouter>,
   );
 }
 
@@ -20,7 +20,7 @@ describe('Header', () => {
 
     expect(aboutLink).toBeInTheDocument();
 
-    const logo = screen.getByRole('link', { name: / /i});
+    const logo = screen.getByRole('link', { name: / /i });
     userEvent.click(logo);
 
     expect(logo).toBeInTheDocument();
@@ -44,4 +44,3 @@ describe('Hero', () => {
     userEvent.click(Cta);
   });
 });
-
