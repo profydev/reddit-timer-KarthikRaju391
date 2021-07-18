@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const FooterContainer = styled.footer`
-  max-width: 1440px;
+  max-width: 980px;
   width: 100%;
-  padding: 0 250px;
+  padding: 0 20px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
