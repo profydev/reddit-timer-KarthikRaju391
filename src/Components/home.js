@@ -87,13 +87,13 @@ const Home = () => (
     <div>
       <Subhead>Great timing, great results! Find the best time to post on your subreddit.</Subhead>
     </div>
-    <ButtonContainer><Button to="/searchpage">Show me the best time</Button></ButtonContainer>
+    <ButtonContainer><Button to="/searchpage/javascript">Show me the best time</Button></ButtonContainer>
     <div>
-      <SubredditLink to="/search">
+      <SubredditLink to="/searchpage/javascript">
         <Subreddit>r/javascript</Subreddit>
       </SubredditLink>
     </div>
-    <ImageContainer to="/searchpage">
+    <ImageContainer to="/searchpage/javascript">
       <Heatmap src="/table.png" alt="heatmap" />
     </ImageContainer>
     <InfoSection id="how-it-works">
