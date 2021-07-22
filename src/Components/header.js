@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 
 export const Container = styled.header`
