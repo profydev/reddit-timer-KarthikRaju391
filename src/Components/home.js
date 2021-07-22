@@ -21,7 +21,6 @@ const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  
 `;
 
 const Button = styled(Link)`
@@ -36,7 +35,9 @@ const Button = styled(Link)`
   line-height: 9px;
   font-weight: bold;
 `;
-
+const SubredditLink = styled(Link)`
+  text-decoration: none;
+`;
 const Subreddit = styled(Subhead)`
   margin-top: 3em;
 `;
@@ -48,10 +49,36 @@ const ImageContainer = styled(Link)`
 `;
 
 const Heatmap = styled.img`
-  width: 80%;
+  max-width: 100%;
   padding: 12px 82px;
 `;
 
+const InfoSection = styled.section`
+  max-width: 650px;
+  margin: 0 auto;
+  margin-top: 133px;
+`;
+
+const InfoHead = styled(Heading)`
+  font-size: 24px;
+  font-weight: 400;
+  text-align: justify;
+`;
+
+const InfoContent = styled.p`
+  color: #93918F;
+  line-height: 1.5em;
+
+`;
+
+const InfoSection2 = styled(InfoSection)`
+  margin-top: 105px;
+`;
+
+const SubLinks = styled.a`
+  text-decoration: none;
+  color: #18a0fb;
+`;
 const Home = () => (
   <div>
     <div>
@@ -62,11 +89,36 @@ const Home = () => (
     </div>
     <ButtonContainer><Button to="/searchpage">Show me the best time</Button></ButtonContainer>
     <div>
-      <Subreddit>r/javascript</Subreddit>
+      <SubredditLink to="/search">
+        <Subreddit>r/javascript</Subreddit>
+      </SubredditLink>
     </div>
     <ImageContainer to="/searchpage">
       <Heatmap src="/table.png" alt="heatmap" />
     </ImageContainer>
+    <InfoSection id="how-it-works">
+      <InfoHead>
+        How it works
+      </InfoHead>
+      <InfoContent>
+        • We find the 500 top posts from the past year for a subreddit.
+        <br />
+        • The data is visualized in a heatmap grouped by weekday and hour of the day.
+        <br />
+        • See immediately when to submit your reddit post.
+      </InfoContent>
+    </InfoSection>
+    <InfoSection2 id="about">
+      <InfoHead>About</InfoHead>
+      <InfoContent>
+        This app was created during a course on
+        <SubLinks rel="noreferrer" target="_blank" href="https://profy.dev/"> profy.dev </SubLinks>
+        with the goal to implement a
+        pixel-perfect real-world application with professional workflows and
+        tools like Kanban, Asana, Zeplin, GitHub, pull requests and code reviews.
+        <SubLinks rel="noreferrer" target="_blank" href="https://profy.dev/employers"> Click here for more information. </SubLinks>
+      </InfoContent>
+    </InfoSection2>
   </div>
 );
 
