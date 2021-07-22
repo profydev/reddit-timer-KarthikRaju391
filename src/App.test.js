@@ -36,11 +36,3 @@ describe('Header', () => {
     // expect(search).toBeInTheDocument();
   });
 });
-
-describe('Hero', () => {
-  test(' clicking CTA button, subreddit, heatmap takes to search page', () => {
-    setup();
-    const Cta = screen.getByRole('button', { name: /Button/ });
-    userEvent.click(Cta);
-  });
-});
