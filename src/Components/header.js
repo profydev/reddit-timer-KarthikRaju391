@@ -40,9 +40,9 @@ const Header = () => (
     <Nav>
       <Link to="/"><img src="/logo.svg" alt="logo" /></Link>
       <NavLinks>
-        <ListItem><StyledLink to="searchpage/javascript">Search</StyledLink></ListItem>
-        <ListItem><StyledLink smooth to="#how-it-works">How it works</StyledLink></ListItem>
-        <ListItem><StyledLink smooth to="#about">About</StyledLink></ListItem>
+        <ListItem><StyledLink to="/searchpage/javascript">Search</StyledLink></ListItem>
+        <ListItem><StyledLink to="#how-it-works">How it works</StyledLink></ListItem>
+        <ListItem><StyledLink to="#about">About</StyledLink></ListItem>
       </NavLinks>
     </Nav>
   </Container>
