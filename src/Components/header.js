@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 export const Container = styled.header`
-  max-width: 1300px;
-  width: 80%;
+  max-width: 1440px;
+  padding: 0 80px;
+  width: 100%;
   margin: 0 auto;
 `;
 
