@@ -112,7 +112,7 @@ const Home = () => (
       <InfoHead>About</InfoHead>
       <InfoContent>
         This app was created during a course on
-        <SubLinks rel="noreferrer" target="_blank" href="https://profy.dev/"> profy.dev </SubLinks>
+        <SubLinks rel="noreferrer" target="_blank" href="https://profy.dev"> profy.dev </SubLinks>
         with the goal to implement a
         pixel-perfect real-world application with professional workflows and
         tools like Kanban, Asana, Zeplin, GitHub, pull requests and code reviews.
