@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 
 export const Container = styled.header`
@@ -13,7 +14,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1.5em;
+  margin-top: 1.6em;
 
   img{
     display: block;
@@ -26,6 +27,7 @@ const ListItem = styled.li`
 
 const NavLinks = styled.ul`
   list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   gap: 1.6em;
 `;
