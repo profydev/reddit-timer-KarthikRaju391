@@ -20,19 +20,9 @@ describe('Header', () => {
 
     expect(aboutLink).toBeInTheDocument();
 
-    const logo = screen.getByRole('link', { name: / /i });
-    userEvent.click(logo);
-
-    expect(logo).toBeInTheDocument();
-
     const HowItWorks = screen.getByRole('link', { name: /how it works/i });
     userEvent.click(HowItWorks);
 
     expect(HowItWorks).toBeInTheDocument();
-
-    // const search = screen.getByRole('link', { name: /searchpage/ });
-    // userEvent.click(search);
-
-    // expect(search).toBeInTheDocument();
   });
 });
